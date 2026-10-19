@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+form.form-filling{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+}
+
+/* p.msg-error{
+    border: 2px solid #ffae00;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+} */
