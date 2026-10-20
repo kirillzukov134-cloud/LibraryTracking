@@ -20,4 +20,3 @@ function CheckingEmailAndName($pdo, $name, $email){
     ]);
     return $statement->fetchColumn() > 0;
 }
-

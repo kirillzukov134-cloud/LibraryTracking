@@ -10,6 +10,7 @@ require __DIR__ .  '/../helpers/helpers.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/main.css">
     <title>Главная страница сайта</title>
 </head>
 <body>
@@ -19,7 +20,7 @@ require __DIR__ .  '/../helpers/helpers.php';
             <a href="index.php" class="logo-site">LibraryBook</a>
         </div>    
             <nav class="nav-bar">
-                <ul>
+                <ul class="nav-ul">
                     <li><a href="#" class="nav-links">Список всех книг</a></li>
                     <li><a href="#" class="nav-links">Изменить свои данные</a></li>
                     <li><a href="#" class="nav-links">Аналитика</a></li>
