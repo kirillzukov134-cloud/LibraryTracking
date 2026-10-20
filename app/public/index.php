@@ -24,11 +24,11 @@ require __DIR__ .  '/../helpers/helpers.php';
                     <li><a href="#" class="nav-links">Список всех книг</a></li>
                     <li><a href="#" class="nav-links">Изменить свои данные</a></li>
                     <li><a href="#" class="nav-links">Аналитика</a></li>
+                    <!-- Тест кнопка "Выход" -->
+                    <li><a href="../views/logout.php" class="nav-links">Выход</a></li>
                 </ul>
             </nav>
     </header>
-    <!-- Тест кнопка "Выход" -->
-    <a href="../views/logout.php">Выход</a>
 </body>
 </html>
 
