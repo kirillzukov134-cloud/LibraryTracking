@@ -27,6 +27,8 @@ require __DIR__ .  '/../helpers/helpers.php';
                 </ul>
             </nav>
     </header>
+    <!-- Тест кнопка "Выход" -->
+    <a href="../views/logout.php">Выход</a>
 </body>
 </html>
 
