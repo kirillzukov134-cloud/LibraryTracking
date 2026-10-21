@@ -5,12 +5,43 @@
     box-sizing: border-box;
 }
 
-form.form-filling{
-    display: grid;
-    align-items: center;
+body.form, h3{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 250px;
+    align-items: center;
 }
+
+form.form-filling{
+    background-color: rgba(246, 240, 240, 0.971);
+    padding: 7px 10px;
+    border: 1px solid rgb(209, 203, 203);
+    border-radius: 5px;
+    margin-top: 17vh;
+}
+
+label, input, button{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+a.redirect{
+    text-decoration: none;
+    font-weight: bold;
+    color: #645f5f;
+}
+
+p.msg-error{
+    border: 2px solid #ffd000;
+    padding: 3px;
+    margin: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
 
 header.main-header{
     display: flex;

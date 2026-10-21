@@ -6,6 +6,7 @@ require __DIR__ . '/../models/UserModel.php';
 
 $name = $_POST['name'];
 $email = $_POST['email'];
+$role = 'Users';
 
 //Проверка на все заполненые поля
 if(!$name || !$email){
@@ -22,7 +23,7 @@ if(CheckingEmailAndName($pdo, $name, $email)){
 }
 
 //Добавление читателя
-if(insertUsers($pdo, $name, $email)){
+if(insertUsers($pdo, $name, $email, $role)){
     $_SESSION['msg-success'] = 'Успешная регистрация';
     redirect('../views/auth.php');
     exit;

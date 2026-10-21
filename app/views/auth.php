@@ -10,8 +10,9 @@ require __DIR__ . '/../helpers/helpers.php';
     <link rel="stylesheet" href="../public/assets/style/main.css">
     <title>Авторизация</title>
 </head>
-<body>
-    <form action="#" method="post" class="form-filling">
+<body class="form">
+    <form action="../controllers/AuthController.php" method="post" class="form-filling">
+        <h3>Авторизация</h3>
         <label> Ваше ФИО
             <input
             type="text"
@@ -26,7 +27,7 @@ require __DIR__ . '/../helpers/helpers.php';
         </label>
         <button>Авторизоваться</button>
         <p>
-            Нет аккаунта?<a href="register.php">зарегистрироваться</a>
+            Нет аккаунта?<a href="register.php" class="redirect"> зарегистрироваться</a>
         </p>
         <?php msgErrorAndSuccess(); ?>
     </form>

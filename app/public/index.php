@@ -1,7 +1,5 @@
 <?php
-require __DIR__ .  '/../helpers/helpers.php';
-// redirect('/app/views/register.php');
-// exit;
+session_start();
 ?>
 
 <!-- Стараюсь писать правильный эталонный шаблон соврменого HTML-5 документа -->
@@ -17,15 +15,17 @@ require __DIR__ .  '/../helpers/helpers.php';
     <header class="main-header">
         <div class="logo">
             <!-- там должен быть внутри тега '<a>' - тег '<img>' -->
-            <a href="index.php" class="logo-site">LibraryBook</a>
+            <a class="logo-site">LibraryBook</a>
         </div>    
             <nav class="nav-bar">
                 <ul class="nav-ul">
-                    <li><a href="#" class="nav-links">Список всех книг</a></li>
+                    <li><a href="../views/books/books.php" class="nav-links">Список всех книг</a></li>
                     <li><a href="#" class="nav-links">Изменить свои данные</a></li>
+                    <?php if($_SESSION['authUsers']['role'] === 'Admin'): ?>
                     <li><a href="#" class="nav-links">Аналитика</a></li>
+                    <?php endif; ?>
                     <!-- Тест кнопка "Выход" -->
-                    <li><a href="../views/logout.php" class="nav-links">Выход</a></li>
+                    <li><a href="/app/views/logout.php" class="nav-links">Выход</a></li>
                 </ul>
             </nav>
     </header>
