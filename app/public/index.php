@@ -19,10 +19,10 @@ session_start();
         </div>    
             <nav class="nav-bar">
                 <ul class="nav-ul">
-                    <li><a href="../views/books/books.php" class="nav-links">Список всех книг</a></li>
+                    <li><a href="/app/views/books/books.php" class="nav-links">Список всех книг</a></li>
                     <li><a href="#" class="nav-links">Изменить свои данные</a></li>
                     <?php if($_SESSION['authUsers']['role'] === 'Admin'): ?>
-                    <li><a href="#" class="nav-links">Аналитика</a></li>
+                    <li><a href="/app/views/analytics/analytics.php" class="nav-links">Аналитика</a></li>
                     <?php endif; ?>
                     <!-- Тест кнопка "Выход" -->
                     <li><a href="/app/views/logout.php" class="nav-links">Выход</a></li>

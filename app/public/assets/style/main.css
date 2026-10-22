@@ -79,6 +79,27 @@ a.nav-links:hover{
     color: #aea7a7;
 }
 
+div.table-book{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 5px;
+}
+
+td, th{
+    text-align: center;
+    border: 2px solid #3d3c3c;
+    padding: 6px;
+}
+
 
 /* p.msg-error{
     border: 2px solid #ffae00;
