@@ -17,7 +17,7 @@ $Books = allBooks($pdo);
     <?php
     include '../../public/index.php';
     ?>
-    <main class="main-container">
+    <main class="main-container" >
         <?php 
         include '../../public/sidebar.php'; 
         ?>

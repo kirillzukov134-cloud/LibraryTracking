@@ -48,7 +48,7 @@ header.main-header{
     justify-content: space-between;
     align-items: center;
     padding: 8px 10px;
-    background-color: #ded4d4;
+    background-color: #3d3c3c7c;
 }
 
 a.logo-site{
@@ -62,21 +62,20 @@ ul{
     display: flex;
     list-style-type: none; 
     margin: 0;
-    padding: 0;
-    gap: 25px;
-    padding: 0 20px;
+    gap: 17px;
+    padding: 0 5px;
 }
 
 a.nav-links{
     color: black;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 19px;
     font-weight: bold;
     transition: background 0.3s ease, color 0.3s ease
 }
 
 a.nav-links:hover{
-    color: #aea7a7;
+    color: #ecebeb85;
 }
 
 div.table-book{
@@ -86,7 +85,7 @@ div.table-book{
     align-items: center;
     font-weight: bold;
     font-size: 20px;
-    margin-top: 20px;
+    margin-bottom: 190px;
 }
 
 table{
